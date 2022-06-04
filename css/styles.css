@@ -104,7 +104,7 @@ img {
 
 .header-nav__list,
 .contact-quickly,
-.ul-adress,
+.contacts,
 .feature__list,
 .promo__list,
 .team__list,
@@ -129,10 +129,10 @@ img {
 .header-nav__link:focus,
 .contact-quickly__link.header-nav__link:hover,
 .contact-quickly__link.header-nav__link:focus,
-.adress:hover,
-.adress:focus,
-.transparency.adress:hover,
-.transparency.adress:focus {
+.contacts__decor:hover,
+.contacts__decor:focus,
+.transparency.contacts__decor:hover,
+.transparency.contacts__decor:focus {
   color: var(--color-focus);
 }
 
@@ -278,7 +278,7 @@ img {
   transform: translateY(-200%);
 }
 
-.modal-close-button {
+.modal__close-button {
   position: absolute;
 
   display: flex;
@@ -300,18 +300,18 @@ img {
   transition: fill var(--general-animation);
 }
 
-.mod-close {
+.modal__close-svg {
   fill: var(--color-h2-h3);
 
   transition: fill var(--general-animation);
 }
 
-.modal-close-button:hover .mod-close,
-.modal-close-button:focus .mod-close {
+.modal__close-button:hover .modal__close-svg,
+.modal__close-button:focus .modal__close-svg {
   fill: var(--color-focus);
 }
 
-.modal-title {
+.modal__title {
   display: inline;
 
   margin-bottom: 12px;
@@ -322,14 +322,14 @@ img {
   color: var(--color-h2-h3);
 }
 
-.modal-label {
+.modal__form {
   display: block;
   width: 100%;
 
   margin-bottom: 10px;
 }
 
-.modal-descr {
+.modal__label {
   display: inline-block;
 
   margin-bottom: 4px;
@@ -340,13 +340,13 @@ img {
   color: var(--color-text);
 }
 
-.space-input {
+.modal__custom {
   position: relative;
   display: block;
   height: 40px;
 }
 
-.modal-input {
+.modal__input {
   width: 100%;
   height: 100%;
 
@@ -358,13 +358,13 @@ img {
   transition: border var(--general-animation);
 }
 
-.modal-input:focus,
-.modal-area:focus {
+.modal__input:focus,
+.modal__area:focus {
   border-color: var(--color-focus);
   outline: transparent;
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 14px;
@@ -373,16 +373,16 @@ img {
   transition: fill var(--general-animation);
 }
 
-.modal-input:focus + .modal-icon {
+.modal__input:focus + .modal__icon {
   fill: var(--color-focus);
 }
 
-.modal-area-form {
+.modal__area-form {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.modal-area {
+.modal__area {
   width: 100%;
 
   padding: 8px;
@@ -397,7 +397,7 @@ img {
   border-radius: 4px;
 }
 
-.modal-area::placeholder {
+.modal__area::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -416,7 +416,7 @@ img {
   color: var(--color-text);
 }
 
-.checkbox-icon {
+.checkbox-form__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -436,17 +436,17 @@ img {
     outline-color var(--general-animation);
 }
 
-.checkbox:focus + .checkbox-icon {
+.checkbox-form__checkbox:focus + .checkbox-form__icon {
   outline-color: var(--color-focus);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox-form__checkbox:checked + .checkbox-form__icon {
   fill: #ffffff;
   background-color: var(--color-focus);
   outline: none;
 }
 
-.license {
+.checkbox-form__link {
   cursor: pointer;
   color: var(--color-focus);
 }
@@ -839,7 +839,7 @@ img {
   margin-bottom: 20px;
 }
 
-.adress {
+.contacts__decor {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -849,15 +849,15 @@ img {
   transition: color var(--general-animation);
 }
 
-.transparency.adress {
+.transparency.contacts__decor {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.ul-adress li:not(:last-child) {
+.contacts li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.join {
+.join__title {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -892,11 +892,11 @@ img {
   fill: currentColor;
 }
 
-.div-join {
+.join {
   margin-right: 93px;
 }
 
-.subsc-label {
+.subscription__label {
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
@@ -907,11 +907,11 @@ img {
   margin-bottom: 20px;
 }
 
-.subscription {
+.subscription__form {
   display: flex;
 }
 
-.subsc-input {
+.subscription__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -929,12 +929,12 @@ img {
   transition: border var(--general-animation);
 }
 
-.subsc-input:focus {
+.subscription__input:focus {
   border-color: var(--color-focus);
   outline: transparent;
 }
 
-.subscr-btn {
+.subscription__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -954,11 +954,11 @@ img {
   min-width: 200px;
 }
 
-.subscr-btn > p {
+.subscription__button > span {
   margin-right: 10px;
 }
 
-.subscr-icon {
+.subscription__icon {
   fill: #ffffff;
 }
 
