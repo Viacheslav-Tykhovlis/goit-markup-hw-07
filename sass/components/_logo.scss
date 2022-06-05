@@ -13,7 +13,16 @@
     padding-bottom: 24px;
   }
 
+  &--down {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
   &__header {
     color: #000000;
+  }
+
+  &__footer {
+    color: #ffffff;
   }
 }

@@ -19,7 +19,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -517,7 +516,7 @@
           >
           <address>
             <ul class="contacts">
-              <li>
+              <li class="contacts__item">
                 <a
                   class="contacts__decor"
                   href="https://goo.gl/maps/PAiW9LLceKNYEAaVA"
@@ -526,15 +525,15 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li>
+              <li class="contacts__item">
                 <a
-                  class="transparency contacts__decor"
+                  class="contacts__decor--transparency"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li>
-                <a class="transparency contacts__decor" href="tel:380991111111"
+              <li class="contacts__item">
+                <a class="contacts__decor--transparency" href="tel:380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -546,22 +545,18 @@
           <ul class="social-list">
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Instagram"
               >
-                <svg
-                  class="social-list__icon adress-icon"
-                  width="20"
-                  height="20"
-                >
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Twitter"
               >
@@ -576,7 +571,7 @@
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Facebook"
               >
@@ -591,7 +586,7 @@
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Linkedin"
               >
@@ -619,7 +614,7 @@
               placeholder="E-mail"
             />
             <button class="subscription__button" type="submit">
-              <span>Подписаться</span>
+              <span class="subscription__send">Подписаться</span>
               <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>

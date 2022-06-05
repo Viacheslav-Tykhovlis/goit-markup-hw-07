@@ -1,6 +1,7 @@
 .feature__list {
   display: flex;
   justify-content: space-between;
+  @extend %listStyleNone;
 }
 
 .feature__item:not(:last-child) {
