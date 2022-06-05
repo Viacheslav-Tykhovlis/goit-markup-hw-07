@@ -19,12 +19,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="header-nav">
           <a class="logo logo--up" href="./index.html">
             Web<span class="logo__header">Studio</span></a
@@ -46,7 +45,7 @@
           </ul>
         </nav>
         <ul class="contact-quickly">
-          <li>
+          <li class="contact-quickly__list">
             <a
               class="contact-quickly__link header-nav__link"
               href="mailto:info@devstudio.com"
@@ -57,7 +56,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contact-quickly__list">
             <a
               class="contact-quickly__link header-nav__link"
               href="tel:380961111111"
@@ -76,17 +75,19 @@
         <div class="container">
           <h1 class="visually-hidden">Примеры работ веб-студии</h1>
           <ul class="filter">
-            <li><button class="filter__button" type="button">Все</button></li>
-            <li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Все</button>
+            </li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -320,14 +321,14 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer__organisation">
+      <div class="container footer__container">
         <div class="footer__adress">
           <a class="logo logo--down" href="./index.html">
             Web<span class="logo__footer">Studio</span></a
           >
           <address>
             <ul class="contacts">
-              <li>
+              <li class="contacts__item">
                 <a
                   class="contacts__decor"
                   href="https://goo.gl/maps/PAiW9LLceKNYEAaVA"
@@ -336,15 +337,15 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li>
+              <li class="contacts__item">
                 <a
-                  class="transparency contacts__decor"
+                  class="contacts__decor--transparency"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li>
-                <a class="transparency contacts__decor" href="tel:380991111111"
+              <li class="contacts__item">
+                <a class="contacts__decor--transparency" href="tel:380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -356,22 +357,18 @@
           <ul class="social-list">
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Instagram"
               >
-                <svg
-                  class="social-list__icon adress-icon"
-                  width="20"
-                  height="20"
-                >
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Twitter"
               >
@@ -386,7 +383,7 @@
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Facebook"
               >
@@ -401,7 +398,7 @@
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__link adress-link"
+                class="social-list__link social-list__link--footer"
                 href=""
                 aria-label="Icon Linkedin"
               >
@@ -429,7 +426,7 @@
               placeholder="E-mail"
             />
             <button class="subscription__button" type="submit">
-              <span>Подписаться</span>
+              <span class="subscription__send">Подписаться</span>
               <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
